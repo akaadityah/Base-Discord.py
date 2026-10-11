@@ -17,7 +17,7 @@ Made by **[@akaadityah](https://github.com/akaadityah)**
 
 ---
 
-## 📖 Table of Contents
+## Table of Contents
 
 - [Overview](#-overview)
 - [Features](#-features)
@@ -35,7 +35,7 @@ Made by **[@akaadityah](https://github.com/akaadityah)**
 
 ---
 
-## ✨ Overview
+## Overview
 
 **Base Bot** gives your staff team a polished way to publish content in any channel as the bot: announcements with a role ping, plain messages, messages with attachments, custom embeds with link buttons, and DMs to members. Everything is driven by slash commands and modals, with role-based access control so only the right people can use each command.
 
@@ -43,7 +43,7 @@ It is a Python / `discord.py` rewrite of the original discord.js base handler, r
 
 ---
 
-## 🚀 Features
+## Features
 
 | | Feature | Details |
 |---|---|---|
@@ -61,7 +61,7 @@ It is a Python / `discord.py` rewrite of the original discord.js base handler, r
 
 ---
 
-## 🧭 Commands
+## Commands
 
 | Command | Options | Who can use it | What it does |
 |---|---|---|---|
@@ -74,7 +74,7 @@ It is a Python / `discord.py` rewrite of the original discord.js base handler, r
 
 All commands are **guild-only** and every confirmation/error reply is **ephemeral** (only the invoker sees it).
 
-### 🔔 Smart mentions
+### Smart mentions
 
 In `/say` and `/say-attachment`, write `@name` and the bot resolves it for you:
 
@@ -85,7 +85,7 @@ In `/say` and `/say-attachment`, write `@name` and the bot resolves it for you:
 
 ---
 
-## 🔐 Permissions
+## Permissions
 
 Access is checked in code (`utils/checks.py`) using the IDs in `config.py`:
 
@@ -103,7 +103,7 @@ In the channels where the bot posts: **View Channel**, **Send Messages**, **Embe
 
 ---
 
-## 🗂 Project Structure
+## Project Structure
 
 ```text
 base_py/
@@ -127,7 +127,7 @@ base_py/
 
 ---
 
-## 🛠 Installation
+## Installation
 
 **Requirements:** Python **3.10+** and a Discord bot application.
 
@@ -145,7 +145,7 @@ pip install -r requirements.txt
 
 ---
 
-## ⚙️ Configuration
+## Configuration
 
 ### 1. Environment variables
 
@@ -177,7 +177,7 @@ The announcement branding ("Eagle Gaming", footer text) is set in `cogs/announce
 
 ---
 
-## 🧰 Discord Developer Portal Setup
+## Discord Developer Portal Setup
 
 1. Open the [Developer Portal](https://discord.com/developers/applications), create or select your application, and go to **Bot**.
 2. Enable these **Privileged Gateway Intents**:
@@ -188,7 +188,7 @@ The announcement branding ("Eagle Gaming", footer text) is set in `cogs/announce
 
 ---
 
-## ▶️ Running the Bot
+## Running the Bot
 
 ```bash
 python bot.py
@@ -198,7 +198,7 @@ On startup you will see the cogs load, MongoDB connect (if configured), and the 
 
 ---
 
-## 🧩 Extending the Bot
+## Extending the Bot
 
 ### Add a command
 
@@ -242,7 +242,7 @@ await self.bot.db.users.update_one({"_id": user.id}, {"$set": {"seen": True}}, u
 
 ---
 
-## ☁️ Deployment
+## Deployment
 
 Any host that can run a long-lived Python process works (VPS, Raspberry Pi, a bot host, Docker). Keep it running with a process manager, for example `systemd`:
 
@@ -265,7 +265,7 @@ Provide `Token`, `ClientID` and `MongoURI` through a `.env` file or the host's e
 
 ---
 
-## 🩺 Troubleshooting
+## Troubleshooting
 
 | Problem | Fix |
 |---|---|
@@ -280,13 +280,11 @@ Provide `Token`, `ClientID` and `MongoURI` through a `.env` file or the host's e
 
 ---
 
-## 💖 Credits
+## Credits
 
 - **Developed and maintained by [@akaadityah](https://github.com/akaadityah)**
 - Built with [discord.py](https://github.com/Rapptz/discord.py) and [Motor](https://github.com/mongodb/motor)
 - Ported from the original discord.js base handler by NotSK
-
-If this project helps you, consider giving [@akaadityah](https://github.com/akaadityah) a follow on GitHub. ⭐
 
 ---
 
