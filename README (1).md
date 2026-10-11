@@ -288,8 +288,3 @@ Provide `Token`, `ClientID` and `MongoURI` through a `.env` file or the host's e
 
 ---
 
-<div align="center">
-
-**Made with ❤️ by [@akaadityah](https://github.com/akaadityah)**
-
-</div>
